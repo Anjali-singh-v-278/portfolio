@@ -133,7 +133,7 @@
     width: 100%;
 }
 #project_des{
-    margin: 2%;
+    margin: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@
 }
 #experience_content{
     padding: 1%;
-    margin-top: 5%;
+    margin-top: 4%;
     display: flex;
     flex-direction: row;
 }
