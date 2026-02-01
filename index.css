@@ -1,28 +1,34 @@
  *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
   }
 
  body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;     
-    min-height: 100vh;
-    margin: 0;
+    justify-content: center;
+    padding: 0px;
     background-color: rgb(252, 252, 252);
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    overflow-x: hidden;
+
 }
 
 #nav_bar{
     background-color: rgb(58, 11, 11);
-    height: 10vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 4rem;
     align-items: center;
-    position: fixed;
+    padding: 0.8rem 1rem;
+    position: sticky;
+    flex-wrap: wrap;
+    z-index: 1000;
 }
+
 
 #nav_bar a{
     text-decoration: none;
@@ -38,31 +44,34 @@
 
 #card{
     background-color: rgb(58, 11, 11);
-    height: 60vh;
-    width: 850px;
-    margin-top: 11%;
-    margin-left: 4%;
-    border: rgb(30, 5, 5);
-    border-radius: 5px;
-    padding: 5px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 3rem auto 2rem auto;
+    border-radius: 10px;
+    padding: 1rem;
     display: flex;
-    flex-direction: row;
+    gap: 1rem;
 }
+
 #card_image{
    height: 60vh;
-   width: 500px;
+   width: auto;
    padding: auto; 
 }
+
 #card_image img {
     width: 100%;
-    height: 100%;
+    max-width: 280px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
 }
+
 #card_content{
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 8pxS;
+    margin-bottom: 8px;
 }
 #card_content_name{
     font-size: xx-large;
@@ -168,12 +177,12 @@
     margin-top: 5%;
 }
 #experience_content{
-    padding: 1%;
-    margin-top: 4%;
-    margin-left: 10%;
-    margin-right: 10%S;
+    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 900px;
     display: flex;
     flex-direction: row;
+    gap: 4rem;
 }
 .experience_section{
     height: 80vh;
@@ -243,3 +252,82 @@
 .social_icons a {
   margin-right: 40px;
 }
+
+@media (max-width: 768px) {
+  #nav_bar {
+    position: fixed;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
+   #nav_bar a {
+    font-size: 0.9rem;
+  }
+  #card {
+    margin-top: 2.8rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+   
+  #card_image {
+  max-height: 265px;
+}
+
+   #card_image img {
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  #card_content {
+  padding: 0.5rem;
+  border-radius: 10px;
+
+}
+
+  #card_content_name {
+    margin-top: 0.4rem;
+    font-size: 1.6rem;
+  }
+
+  #card_content_work {
+    padding-top: 1rem;
+  }
+
+  #card_content_discription {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  #experience_content {
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  #experience_content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .experience_section {
+    padding: 1rem 0;
+  }
+  #project_des{
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  #contact {
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  body {
+  overflow-x: hidden;
+}
+
+}
+
+
