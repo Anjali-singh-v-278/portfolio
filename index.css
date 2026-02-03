@@ -253,7 +253,7 @@
   margin-right: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #nav_bar {
     position: fixed;
     flex-direction: row;
@@ -327,7 +327,6 @@
   body {
   overflow-x: hidden;
 }
-
 }
 
 
