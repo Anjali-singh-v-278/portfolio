@@ -249,7 +249,8 @@
   #nav_bar {
     position: fixed;
     flex-direction: row;
-    gap: 0.9rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
    #nav_bar a {
     font-size: 1rem;
@@ -292,9 +293,12 @@
   }
 
   #experience_content {
-    margin-top: 8%;
+    margin-top: 12%;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 8rem;
+    align-items: center;
+    text-align: center;
   }
 
   #experience_content img {
@@ -303,20 +307,31 @@
     height: auto;
   }
 
+  
+  #experience_content .experience_section p{
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  }
+
   .experience_section {
     padding: 1rem 0;
   }
   #project_des{
     flex-direction: column;
     gap: 5rem;
-    margin-top: 9%;
+    margin-top: 12%;
   }
 
   #contact {
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
-  body {
+
+html, body {
   overflow-x: hidden;
+  width: 100%;
+
 }
 }
