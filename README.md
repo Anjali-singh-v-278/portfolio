@@ -12,7 +12,7 @@ This is my personal developer portfolio built using React and modern CSS practic
 - Clean UI
 
 ## Live Demo
-[View Live Project] https://anjali-singh-v-278.github.io/portfolio/
+View Live Project: https://anjali-singh-v-278.github.io/portfolio/
 
 
 ## What I Learned
