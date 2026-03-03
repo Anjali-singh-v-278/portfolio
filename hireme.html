@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-top: 5%;
+  
+}
+
+body{
+    background: #111111;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #1C0A0A;
+  color: #F5E6E6;
+}
+
+#contact h2 {
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 4%;
+    color: #cfcece;
+}
+button {
+  background: #B22222;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(178,34,34,0.4);
+  transition: 0.3s ease;
+  justify-content: center;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(178,34,34,0.6);
+}
+</style>
+<body>
+<section id="contact">
+  <h2>Start Your Project</h2>
+
+  <form action="https://formspree.io/f/mvzbjklr" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <select name="project_type" required>
+      <option value="">Select Project Type</option>
+      <option>Landing Page</option>
+      <option>Business Website</option>
+      <option>Portfolio Website</option>
+    </select>
+
+    <select name="budget" required>
+      <option value="">Select Budget Range</option>
+      <option>₹5,000 – ₹10,000</option>
+      <option>₹10,000 – ₹20,000</option>
+      <option>₹20,000+</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+
+    <button type="submit">Start Your Project</button>
+
+  </form>
+</section>
+
+</body>
+</html> 
